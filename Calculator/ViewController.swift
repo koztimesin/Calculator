@@ -94,6 +94,9 @@ class ViewController: UIViewController {
                 else if currentOperation == .percentage {
                 }
                 leftNum = result
+                if (Double(result)!.truncatingRemainder(dividingBy: 1) == 0) {
+                    result = "\(Int(Double(result)!))"
+                }
                 outputLabel.text = result
             }
             currentOperation = operations
