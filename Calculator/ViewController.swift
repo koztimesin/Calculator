@@ -33,7 +33,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func numbersButton(_ sender: RoundButton) {
-        if currentNum.count <= 9 {
+        if sender.tag == 0 && outputLabel.text == "0" { return }
+        if currentNum.count <= 8 {
             currentNum += "\(sender.tag)"
             outputLabel.text = currentNum
         }
@@ -64,7 +65,7 @@ class ViewController: UIViewController {
         operation(operations: .plus)
     }
     @IBAction func dotNum(_ sender: RoundButton) {
-        if currentNum.count <= 8 {
+        if currentNum.count <= 7 {
             currentNum += "."
             outputLabel.text = currentNum
         }
