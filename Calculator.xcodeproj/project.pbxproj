@@ -13,6 +13,7 @@
 		5344B90428744A6E00E0E14E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5344B90228744A6E00E0E14E /* Main.storyboard */; };
 		5344B90628744A6E00E0E14E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5344B90528744A6E00E0E14E /* Assets.xcassets */; };
 		5344B90928744A6E00E0E14E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5344B90728744A6E00E0E14E /* LaunchScreen.storyboard */; };
+		5344B91128746E6F00E0E14E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5344B91028746E6F00E0E14E /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5344B90528744A6E00E0E14E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5344B90828744A6E00E0E14E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5344B90A28744A6E00E0E14E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5344B91028746E6F00E0E14E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				5344B8FE28744A6E00E0E14E /* SceneDelegate.swift */,
 				5344B90028744A6E00E0E14E /* ViewController.swift */,
 				5344B90228744A6E00E0E14E /* Main.storyboard */,
+				5344B91028746E6F00E0E14E /* RoundButton.swift */,
 				5344B90528744A6E00E0E14E /* Assets.xcassets */,
 				5344B90728744A6E00E0E14E /* LaunchScreen.storyboard */,
 				5344B90A28744A6E00E0E14E /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5344B91128746E6F00E0E14E /* RoundButton.swift in Sources */,
 				5344B90128744A6E00E0E14E /* ViewController.swift in Sources */,
 				5344B8FD28744A6E00E0E14E /* AppDelegate.swift in Sources */,
 				5344B8FF28744A6E00E0E14E /* SceneDelegate.swift in Sources */,
