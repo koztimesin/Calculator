@@ -91,7 +91,7 @@ class ViewController: UIViewController {
                 case .multiply:
                     result = String(format: "%.2f", (Double(leftNum)! * Double(rightNum)!))
                 case .divide:
-                    result = String(format: "%.2f", (Double(leftNum)! + Double(rightNum)!))
+                    result = String(format: "%.2f", (Double(leftNum)! / Double(rightNum)!))
                 default:
                     return
                 }
