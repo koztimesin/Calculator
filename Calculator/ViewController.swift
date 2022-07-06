@@ -20,9 +20,9 @@ class ViewController: UIViewController {
     
     @IBOutlet var outputLabel: UILabel!
     
-    var currentNum = ""
-    var leftNum = ""
-    var rightNum = ""
+    var currentNum = "0"
+    var leftNum = "0"
+    var rightNum = "0"
     var result = ""
     var currentOperation:Operations = .NULL
     
@@ -41,9 +41,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func allClear(_ sender: RoundButton) {
-        currentNum = ""
-        leftNum = ""
-        rightNum = ""
+        currentNum = "0"
+        leftNum = "0"
+        rightNum = "0"
         result = ""
         currentOperation = .NULL
         outputLabel.text = "0"
