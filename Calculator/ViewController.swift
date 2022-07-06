@@ -21,8 +21,8 @@ class ViewController: UIViewController {
     @IBOutlet var outputLabel: UILabel!
     
     var currentNum = "0"
-    var leftNum = "0"
-    var rightNum = "0"
+    var leftNum = ""
+    var rightNum = ""
     var result = ""
     var currentOperation:Operations = .NULL
     
@@ -36,14 +36,14 @@ class ViewController: UIViewController {
         if sender.tag == 0 && outputLabel.text == "0" { return }
         if currentNum.count <= 8 {
             currentNum += "\(sender.tag)"
-            outputLabel.text = currentNum
+            outputLabel.text = String(Int(currentNum)!)
         }
     }
     
     @IBAction func allClear(_ sender: RoundButton) {
         currentNum = "0"
-        leftNum = "0"
-        rightNum = "0"
+        leftNum = ""
+        rightNum = ""
         result = ""
         currentOperation = .NULL
         outputLabel.text = "0"
