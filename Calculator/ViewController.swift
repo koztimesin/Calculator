@@ -35,8 +35,9 @@ class ViewController: UIViewController {
     @IBAction func numbersButton(_ sender: RoundButton) {
         if sender.tag == 0 && outputLabel.text == "0" { return }
         if currentNum.count <= 8 {
+            if currentNum == "0" { currentNum = "" }
             currentNum += "\(sender.tag)"
-            outputLabel.text = String(Int(currentNum)!)
+            outputLabel.text = currentNum
         }
     }
     
@@ -99,6 +100,8 @@ class ViewController: UIViewController {
                 leftNum = result
                 if (Double(result)!.truncatingRemainder(dividingBy: 1) == 0) {
                     result = "\(Int(Double(result)!))"
+                } else {
+                    result = "\(Double(result)!)"
                 }
                 outputLabel.text = result
             }
