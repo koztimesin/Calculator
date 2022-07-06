@@ -83,19 +83,17 @@ class ViewController: UIViewController {
             if currentNum != "" {
                 rightNum = currentNum
                 currentNum = ""
-                if currentOperation == .plus {
+                switch currentOperation {
+                case .plus:
                     result = String(format: "%.2f", (Double(leftNum)! + Double(rightNum)!))
-                }
-                else if currentOperation == .minus {
+                case .minus:
                     result = String(format: "%.2f", (Double(leftNum)! - Double(rightNum)!))
-                }
-                else if currentOperation == .multiply {
+                case .multiply:
                     result = String(format: "%.2f", (Double(leftNum)! * Double(rightNum)!))
-                }
-                else if currentOperation == .divide {
-                    result = String(format: "%.2f", (Double(leftNum)! / Double(rightNum)!))
-                }
-                else if currentOperation == .percentage {
+                case .divide:
+                    result = String(format: "%.2f", (Double(leftNum)! + Double(rightNum)!))
+                default:
+                    return
                 }
                 leftNum = result
                 if (Double(result)!.truncatingRemainder(dividingBy: 1) == 0) {
